@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../font/Myriad-Pro.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("../font/OpenSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("../font/Gotham-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("../font/Gotham.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+body {
+  width: 1600px;
+  margin: 0 auto;
+
+  background-color: #000000;
+
+}
+
+.header {
+  height: 880px;
+
+  margin: 0 auto;
+
+  background-image: url("../img/header.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000000;
+
+  color: #ffffff;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  width: 1200px;
+
+  margin: 0 auto;
+  padding: 22px 10px 0 15px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0;
+}
+
+.logo {
+  position: relative;
+  width: 67px;
+  height: 67px;
+}
+
+.logo-text {
+  display: block;
+  text-align: center;
+  z-index: 99;
+
+  font-size: 30px;
+  line-height: 67px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo-front {
+  position: absolute;
+
+  width: 67px;
+  height: 67px;
+  z-index: 98;
+
+  background-color: #11749e;
+}
+
+.logo-back {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+
+  width: 67px;
+  height: 67px;
+  z-index: 97;
+
+  background-color: #ffffff;
+  opacity: 0.75;
+}
+
+.menu-social {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 18px;
+  margin-right: 0px;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu-item {
+  margin-left: 28px;
+}
+
+.menu-item a {
+  padding-bottom: 37px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  font-family: "Myriad Pro", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.menu-item a:hover {
+  /* font-weight: 700; */
+  border-bottom: 6px solid #11749e;
+}
+
+.socials {
+  margin-left: 44px;
+}
+
+.socials ul {
+  display: flex;
+}
+
+.socials-item:nth-child(n+2) {
+  margin-left: 26px;
+}
+
+.socials-item a i {
+  font-size: 20px;
+}
+
+.socials-item a i:hover {
+  color: #11749e;
+}
+
+.header-title {
+  margin-top: 288px;
+
+  text-align: center;
+}
+
+.title {
+  font-family: "Gotham Bold", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 152.54px;
+  line-height: 1;
+  letter-spacing: -7px;
+  text-transform: uppercase;
+}
+
+.motto {
+  margin-top: -50px;
+  margin-left: 20px;
+
+  font-family: "Gotham Medium", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24.79px;
+
+  letter-spacing: 18px;
+  text-transform: uppercase;
+
+  color: #11749e;
+}
+
+.scroll-down {
+  margin-top: 110px;
+
+  text-align: center;
+}
+
+.scroll-down-text {
+  display: block;
+
+  font-family: "Open Sans Regular", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+}
+
+.scroll-down-link img {
+  margin-top: 20px;
+}
+
+.scroll-down-link img:hover {
+  color: #11749e;
+}
