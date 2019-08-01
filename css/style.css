@@ -22,7 +22,21 @@
 @font-face {
   font-family: "Gotham Medium";
   src: url("../font/Gotham.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Book";
+  src: url("../font/Gotham.otf");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Bold Condensed";
+  src: url("../font/Roboto-Bold-Condensed.ttf");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -41,8 +55,9 @@ body {
   min-width: 1200px;
   max-width: 1600px;
   margin: auto;
-  
-  background-color: #000000;s
+
+  background-color: #000000;
+  s
 }
 
 .wrapper {
@@ -186,7 +201,7 @@ body {
   margin-left: 20px;
 
   font-family: "Gotham Medium", Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 24.79px;
 
   letter-spacing: 18px;
@@ -220,40 +235,106 @@ body {
 }
 
 .features {
+  height: 738px;
+
   background-color: #11749e;
 
   text-align: center;
 }
 
-.w {
+.features .wrapper {
+  position: relative;
 
+  padding-top: 163px;
+}
+
+.w {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  right: 0;
+
+  justify-content: center;
+
+  font-family: "Roboto Bold Condensed";
+  font-weight: 700;
+  font-size: 247.18px;
+
+  opacity: 0.18;
 }
 
 .features-moto {
+  position: relative;
 
+  font-family: "Gotham Medium";
+  font-weight: 500;
+  font-size: 37.55px;
+  text-transform: uppercase;
 }
 
 .features-list {
   display: flex;
   justify-content: space-between;
+
+  margin-top: 135px;
 }
 
 .feature {
-  width: 25%; 
+  width: 25%;
+  position: relative;
+
+  padding-top: 155px;
 }
 
 .feature:nth-child(n+2) {
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
-.feature-logo {
+.feature::after {
+  content: "";
+  position: absolute;
 
+  top: 5px;
+  left: 50%;
+  margin-left: -25%;
+
+  width: 133px;
+  height: 133px;
+
+  border-radius: 50%;
+  background-color: #2e85aa;
+  background-size: 25%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.write::after {
+  background-image: url("../img/Write.png");
+}
+
+.search::after {
+  background-image: url("../img/Search.png");
+}
+
+.simon-says::after {
+  background-image: url("../img/Simon-says.png");
 }
 
 .feature-title {
-
+  font-family: "Gotham Medium";
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .feature-text {
+  height: 75px;
+  overflow: hidden;
 
+  margin-top: 22px;
+
+  font-family: "Gotham Book";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
 }
