@@ -338,3 +338,25 @@ body {
   font-size: 15px;
   line-height: 24px;
 }
+
+.news {
+  height: 920px;
+}
+
+.news-item {
+  height: 50%;
+}
+
+.news-left {
+  float: left;
+  width: 50%;
+
+  background-color: #222222;
+}
+
+.news-right {
+  float: right;
+  width: 50%;
+
+  background-color: #f3f3f3;
+}
